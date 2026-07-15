@@ -1,0 +1,123 @@
+/* Eliminamos los bordes blancos de la pantalla */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Diseñamos la franja gris */
+.cabecera-logo {
+    background-color:#9a9a9a; /* Color gris */
+    width: 100%;               /* Ocupa todo el ancho */
+    padding: 20px 0;           /* Espacio arriba y abajo para que respire la manzana */
+    display: flex;             /* Activa el diseño flexible */
+    justify-content: center;   /* Centra la manzana horizontalmente */
+    align-items: center;    
+    
+    
+    
+    display: flex;
+    justify-content: space-between; /* Envía el menú a la izquierda y la manzana a la derecha */
+    align-items: center;/* Centra la manzana verticalmente */
+}
+
+/* Controlamos el tamaño de la manzana dentro de la franja */
+.cabecera-logo img {
+    width: 60px;               /* Ajusta este valor si la quieres más grande o pequeña */
+    height: auto;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+.topnav {
+    background-color: #9a9a9a; /* Color de fondo de la barra de navegación */
+    overflow: hidden;
+           /* Oculta cualquier contenido que se desborde */
+}
+
+.topnav a {
+    float: left;               /* Alinea los enlaces a la izquierda */
+    display: block;            /* Hace que los enlaces sean bloques para poder aplicar padding */
+    color: white;              /* Color del texto de los enlaces */
+    text-align: center;        /* Centra el texto dentro de los enlaces */
+    padding: 10px 16px;        /* Espaciado interno de los enlaces */
+    text-decoration: none;
+    font-size: 17px;     /* Elimina el subrayado de los enlaces */
+}
+
+
+
+
+
+
+.topnav a:hover {
+    background-color: #ddd;    /* Color de fondo al pasar el ratón */
+    color: white;              /* Color del texto al pasar el ratón */
+}
+
+
+.topnav a.active {
+      list-style: none;
+      margin-right: 75px;
+      padding: 0;
+      float: right;
+      }
+
+
+/* Esto le da el margen perfecto a todo el contenido de abajo (letras e imágenes) */
+.cuerpo-pagina {
+    padding-left: 25px;   /* Espacio en el borde izquierdo */
+    padding-right: 25px;  /* Espacio en el borde derecho */
+    box-sizing: border-box; /* Evita desajustes en el tamaño de la pantalla */
+}
+
+.barra-navegacion {
+    /* ... mantén el código que ya tenías aquí (background, display, etc.) ... */
+
+    /* ESTO HACE LA MAGIA */
+    position: sticky;   /* Hace que la barra se quede pegada */
+    top: 0;             /* Se pega exactamente al borde superior de la pantalla */
+    z-index: 1000;      /* Evita que las imágenes o textos de abajo pasen por encima de la barra */
+}
+
+
+ 
+#acerca {
+    margin-bottom: 10vh; /* 50vh es la mitad del tamaño de tu pantalla */
+    padding-top: 20px;
+}
+
+#contacto {
+    margin-bottom: 0vh; /* 50vh es la mitad del tamaño de tu pantalla */
+    padding-top: 0px;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 15px; /* Espacio entre cada icono */
+}
+
+/* Estilo para cada icono individual */
+.redes-sociales a {
+    color: white;             /* Color blanco para que combine con el menú */
+    font-size: 18px;          /* Tamaño del icono */
+    text-decoration: none;
+    transition: transform 0.2s, color 0.2s; /* Animación suave */
+}
+
+/* Efecto al pasar el cursor (hover) */
+.redes-sociales a:hover {
+    color: #d1d1d1;           /* Se vuelve gris claro */
+    transform: scale(1.15);   /* Hace que el icono se agrande un poquito */
+}
