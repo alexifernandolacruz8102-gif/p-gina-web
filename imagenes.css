@@ -99,18 +99,18 @@ h3 {
 
  
 #acerca {
-    margin-bottom: 10vh; /* 50vh es la mitad del tamaño de tu pantalla */
+    margin-bottom: 10vh; 
     padding-top: 20px;
 }
 
 #contacto {
-    margin-bottom: 0vh; /* 50vh es la mitad del tamaño de tu pantalla */
+    margin-bottom: 0vh; 
     padding-top: 0px;
 }
 
 .redes-sociales {
     display: flex;
-    gap: 15px; /* Espacio entre cada icono */
+    gap: 15px; 
 }
 
 /* Estilo para cada icono individual */
